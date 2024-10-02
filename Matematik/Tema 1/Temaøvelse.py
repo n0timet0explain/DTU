@@ -123,15 +123,19 @@ import math
 
 # Definér funktionen f(z) = z*e^ia
 
-z=complex(5,1)
-res=complex(4.701663558,1.973413232)
+# z=complex(5,1)
+# res=complex(4.701663558,1.973413232)
 
-argz=cmath.phase(z)
-argres=cmath.phase(res)
+# argz=cmath.phase(z)
+# argres=cmath.phase(res)
 
-print(argz)
-print(argres)
+# print(argz)
+# print(argres)
 
-alpha=argres-argz
+# alpha=argres-argz
 
-print(alpha)
+# print(alpha)
+
+# opg 6
+
+z1=complex()
