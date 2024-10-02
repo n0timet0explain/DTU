@@ -145,6 +145,16 @@ scale=7
 angel=0.5
 vector=complex(2,1)
 
-w=z1*scale*cmath.exp(1j*angel)+vector
+w1=z1*scale*cmath.exp(1j*angel)+vector
+w2=z2*scale*cmath.exp(1j*angel)+vector
 
-print(w)
+print(w1)
+print(w2)
+
+
+#alt løsning
+polar=cmath.rect(7,0.5)
+
+res=z1*polar+vector
+
+print(res)
