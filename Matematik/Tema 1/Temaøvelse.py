@@ -123,18 +123,18 @@ import math
 
 # Definér funktionen f(z) = z*e^ia
 
-# z=complex(5,1)
-# res=complex(4.701663558,1.973413232)
+z=complex(5,1)
+res=complex(4.701663558,1.973413232)
 
-# argz=cmath.phase(z)
-# argres=cmath.phase(res)
+argz=cmath.phase(z)
+argres=cmath.phase(res)
 
-# print(argz)
-# print(argres)
+print(argz)
+print(argres)
 
-# alpha=argres-argz
+alpha=argres-argz
 
-# print(alpha)
+print(alpha)
 
 # opg 6
 
@@ -152,7 +152,13 @@ print(w1)
 print(w2)
 
 
+
 #alt løsning
+z1=complex(5,4)
+z2=complex(7,5)
+vector=complex(2,1)
+
+
 polar=cmath.rect(7,0.5)
 
 res=z1*polar+vector
