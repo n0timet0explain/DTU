@@ -138,4 +138,13 @@ import math
 
 # opg 6
 
-z1=complex()
+z1=complex(5,4)
+z2=complex(7,5)
+
+scale=7
+angel=0.5
+vector=complex(2,1)
+
+w=z1*scale*cmath.exp(1j*angel)+vector
+
+print(w)
