@@ -75,21 +75,21 @@
 
 
 #Opgave 4.8
-# height=30
-# stjerner=1
-# dybde=height
-# #top
-# for i in range(1,height+1):
-#     print(dybde*" "+(stjerner*"*"))
-#     dybde=dybde-1
-#     stjerner=stjerner+2
-# stjerner=stjerner-4
-# dybde=dybde+2
-# #bund
-# for i in range(height):
-#     print((dybde)*" "+(stjerner*"*"))
-#     dybde=dybde+1
-#     stjerner=stjerner-2
+height=5
+stjerner=1
+dybde=height
+#top
+for i in range(1,height+1):
+    print(dybde*" "+(stjerner*"*"))
+    dybde=dybde-1
+    stjerner=stjerner+2
+stjerner=stjerner-4
+dybde=dybde+2
+#bund
+for i in range(height):
+    print((dybde)*" "+(stjerner*"*"))
+    dybde=dybde+1
+    stjerner=stjerner-2
 
 #Opgave 4.9
 # R=0.9
