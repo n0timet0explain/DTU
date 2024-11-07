@@ -43,9 +43,9 @@ path = 'Programering/Week 9/' # path to the folder containing the file
 
 
 
-# filename = os.path.join(path, 'mester_jakob.txt')
-# with open(filename) as file_object:
-#     content = file_object.read()
+filename = os.path.join(path, 'mester_jakob.txt')
+with open(filename) as file_object:
+    content = file_object.read()
 
 
 # ########## Alt metode til at åbne filer
@@ -57,8 +57,8 @@ path = 'Programering/Week 9/' # path to the folder containing the file
 # # for i in range(len(content)):
 # #     print(i, content[i])
 
-# print(repr(content[26]))
-# print(repr(content))
+print(repr(content[26]))
+print(repr(content))
 
 # lines = content.splitlines()
 # print(lines)
