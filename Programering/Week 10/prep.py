@@ -48,12 +48,14 @@
 # print(b.name)
 
 
-class MyClass:
-    def __init__(self, height):
-        self.height=height
+# class MyClass:
+#     def __init__(self, height):
+#         self.height=height
 
 
-my_object=MyClass(10)
-second_box=MyClass(20)
-second_box.height=5
-print(my_object.height)
+# my_object=MyClass(10)
+# second_box=MyClass(20)
+# second_box.height=5
+# print(my_object.height)
+
+
