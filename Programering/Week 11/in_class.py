@@ -49,8 +49,86 @@
 
 
 
-# Opgave 11.3
+# # Opgave 11.3
 
-class IntegerMod4:
-    def __init__(self) -> None:
+# class IntegerMod4:
+#     def __init__(self, tal):
+#         self.tal=tal
+#         self.udregn=self.tal//4
+#     def __str__(self) -> str:
+#         return f"{self.udregn}"
+#     def __add__(self, other):
+#         resplus=self.udregn+other.udregn
+#         return resplus
+#     def __mul__(self, other):
+#         resgange=self.udregn*other.udregn
+#         return resgange
+
         
+
+
+
+# e0 = IntegerMod4(0)
+# e1 = IntegerMod4(5)
+# e2 = IntegerMod4(2)
+# e3 = IntegerMod4(3)
+# Z4 = [e0, e1, e2, e3]
+
+# print("-----------+-----------")
+# for i in Z4:
+#     for j in Z4:
+#         print(f'{i} + {j} = {i + j}')
+#     print()
+# print("-----------*-----------")
+# for i in Z4:
+#     for j in Z4:
+#         print(f'{i} * {j} = {i * j}')
+#     print()
+
+
+###### PROBLEM SOLVING ############
+
+class BankAccount():
+    def __init__(self, bal):
+        self.balance=bal
+    def deposit(self, amount):
+        self.balance=self.balance+amount
+    def withdraw(self, amount):
+        if (self.balance-amount)>0:
+            self.balance=self.balance-amount
+            return amount
+        else:
+            return 0
+    def get_balance(self):
+        return self.balance
+
+
+# my_account = BankAccount(1000)
+# print(my_account.get_balance())
+# print(my_account.deposit(500))
+# print(my_account.get_balance())
+# print(my_account.withdraw(200))
+# print(my_account.get_balance())
+# print(my_account.withdraw(2000))
+# print(my_account.get_balance())
+
+class OverdraftAccount(BankAccount):
+    def __init__(self, bal, limit):
+        self.balance=bal
+        self.limit=0-limit
+    def withdraw(self, amount):
+        if (self.balance-amount)>self.limit:
+            self.balance=self.balance-amount
+            return amount
+        else:
+            return 0
+
+
+my_account = OverdraftAccount(0,500)
+print(my_account.get_balance())
+print(my_account.deposit(1000))
+print(my_account.get_balance())
+print(my_account.withdraw(1300))
+print(my_account.get_balance())
+print(my_account.withdraw(500))
+print(my_account.get_balance())  
